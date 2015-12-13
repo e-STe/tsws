@@ -1,57 +1,49 @@
-#body #table_contain {
-  width: 90%;
-  overflow: auto;
-  margin: auto;
-  background: #C5D1D0;
-  border-radius: 6px;
-  padding: 20px;
+#body #table_contain {
+  width: 90%;
+  overflow: auto;
+  margin: auto;
+  background: #C5D1D0;
+  border-radius: 6px;
+  padding: 20px;
 }
-
-#body table {
-  text-align: center;
-  border-collapse: collapse;
-  margin: auto;
+#body table {
+  text-align: center;
+  border-collapse: collapse;
+  margin: auto;
 }
-
-#body td {
-  background: #a3b1b0;
-  border: 2px solid black;
-  border-radius: 2px;
-  width: 60px;
-  height: 60px;
-  transition: all 0.1s ease-out;
+#body td {
+  background: #a3b1b0;
+  border: 2px solid black;
+  border-radius: 2px;
+  width: 60px;
+  height: 60px;
+  transition: all 0.1s ease-out;
 }
-
-#body td:hover {
-  background: #C5D1D0;
+#body td:hover {
+  background: #C5D1D0;
 }
-
-#body table td span {
-  margin-left: 10px;
-  vertical-align: 100%;
+#body table td span {
+  margin-left: 10px;
+  vertical-align: 100%;
 }
-
-#body table .table_hide {
-  border: none;
-  background: transparent;
+#body table .table_hide {
+  border: none;
+  background: transparent;
 }
-
-#body table .table_green {
-  background: #8eb191;
-  transition: all 0.1s ease-in;
+#body table .table_green {
+  background: #8eb191;
+  transition: all 0.1s ease-in;
 }
-
-#body table .table_green:hover {
-  background: #C5D1D0;
+#body table .table_green:hover {
+  background: #C5D1D0;
 }
-
-#body #table_information {
-  height: 400px;
-  font-size: 1.3em;
-  width: 90%;
-  margin: auto;
-  margin-top: 30px;
-  padding: 20px;
-  background: #a3b1b0;
-  border-radius: 8px;
-}
+#body #table_information {
+  height: 400px;
+  font-size: 1.3em;
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  padding: 20px;
+  background: #a3b1b0;
+  border-radius: 8px;
+}
