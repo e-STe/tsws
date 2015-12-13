@@ -6,14 +6,14 @@ $(document).ready(function() {
     $('#menu img').click(function() {
         if(!opened && !antirafale) {
             antirafale = true;
-            $('#menu img').attr('src', 'images/icones/menu/trait.gif');
-            setTimeout(function(){$('#menu img').attr('src', 'images/icones/menu/croix.png');}, 800);
+            $('#menu img').attr('src', '/images/icones/menu/trait.gif');
+            setTimeout(function(){$('#menu img').attr('src', '/images/icones/menu/croix.png');}, 800);
             $('#menu li').css('display', 'block');
             $('#menu').animate({height: '+=450px'}, 1000, "", function(){antirafale = false;});
             opened = true;
         } else if(opened && !antirafale) {
-            $('#menu img').attr('src', 'images/icones/menu/croix.gif');
-            setTimeout(function(){$('#menu img').attr('src', 'images/icones/menu/trait.png');}, 800);
+            $('#menu img').attr('src', '/images/icones/menu/croix.gif');
+            setTimeout(function(){$('#menu img').attr('src', '/images/icones/menu/trait.png');}, 800);
             antirafale = true;
             $('#menu').animate({height: '-=450px'}, 1000, "", function(){antirafale = false; $('#menu li').css('display', 'none');});
             opened = false;

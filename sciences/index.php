@@ -2,34 +2,25 @@
 <html>
 	<head>
 		<title>TSWS | Sciences</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1" />
-		<link rel="icon" type="image/png" href="../images/icones/favicon-32.png" />
-		<link rel="stylesheet" type="text/css" href="../css/base.css" />
-		<link rel="stylesheet" type="text/css" media="only screen and (min-width:50px) and (max-width:803px)" href="../css/mobile.css" />
+		<meta name="description" content="Portail des cours de sciences de tsws" />
+		<meta name="keywords" content="sciences, cours, tsws.ml, tsws, apprendre, portail science,"
+		<?php include '../scripts/includes/meta.html' ?>
+		<link rel="stylesheet" type="text/css" href="/css/sciences.css" />
 	</head>
 	<body>
 		<div id="body">
-			<div id="logo"><h1>&nbsp;The Science Website</h1> <a href="http://tsws.ml"></a></div>
-			<nav id="menu">
-				<a href="http://tsws.ml">Accueil</a>
-				<a href="#notnow">Mécanique</a>
-				<a href="#notnow">Mathématiques</a>
-				<a href="#notnow">Programmation</a>
-				<a href="#notnow">Informatique</a>
-				<a href="#notnow">Electronique</a>
-				<a href="sciences/" style="background: #fff; border-bottom: 2px solid #707070;">Sciences</a>
-			</nav>
+		
+			<?php include '../scripts/includes/header.html' ?>
 			
 			<article>
 				<h1>Sciences</h1>
-				<p>Portail des Sciences ! Découvrez ici les tous nouveaux cours de sciences.</p>
+				<p>Portail des Sciences ! Découvrez ici les tout nouveaux cours de sciences.</p>
 			</article>
 			
 			<section id="promo_div">
 				<div class="promo pr1"><p>Les atomes</p></div>
 				<div class="promo pr2"><p>Tableau périodique</p></div>
-				<div class="promo pr3"><p>Principe de fonctionnement d'une léolienne</p></div>
+				<div class="promo pr3"><p>Principe de fonctionnement d'une LEOlienne</p></div>
 				<div style="clear: both; width: 100%;"></div>
 			</section>
 
