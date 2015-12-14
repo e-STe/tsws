@@ -2,14 +2,16 @@
 <html>
   <head>
     <title>TSWS | Tableau périodique</title>
-    <?php include '../scripts/php/scripts.php' ?>
-    <link rel="stylesheet" type="text/css" href="../scripts/css/sciences.css" />
+    <?php include '../scripts/includes/meta.html' ?>
+    <link rel="stylesheet" type="text/css" href="/css/sciences.css" />
     <script src="../scripts/js.table_select.js"></script>
   </head>
   <body>
-    <?php include '../scripts/php/menu.php' ?>
-    <section id="body">
-      <h1>Tableau périodique des éléments</h1>
+    <div id="body">
+	
+	  <?php include '../scripts/includes/header.html' ?>
+	  
+      <h1 style="margin-top: 150px; text-align: center;">Tableau périodique des éléments</h1>
 
       <div id="table_contain">
         <table> <!-- Début du tableau périodique -->
@@ -181,13 +183,17 @@
         </table>
       </div>
       <aside id="table_information">
-        <h1 style="font-size: 3em; text-align: center; position: relative; bottom: 1em;">He</h1>
+        <h1>Cet Atome</h1>
         <p>Nombre de protons et d'électrons : </p>
         <p>Appartient à la famille élémentaire des : </p>
         <p>Répartition de ses couches électroniques : </p>
         <p>Ion(s) possible(s) de cet atome :</p>
         <p>Liaisons électriques maximales : </p>
+		<p>Masse Molaire : </p>
       </aside>
-    </section>
+	  
+	  <?php include '../scripts/includes/footer.html' ?>
+	  
+    </div>
   </body>
 </html>

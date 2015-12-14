@@ -19,21 +19,12 @@
 			
 			<section id="promo_div">
 				<div class="promo pr1"><p>Les atomes</p></div>
-				<div class="promo pr2"><p>Tableau périodique</p></div>
+				<a href="tableau-periodique.php"><div class="promo pr2"><p>Tableau périodique</p></div></a>
 				<div class="promo pr3"><p>Principe de fonctionnement d'une LEOlienne</p></div>
 				<div style="clear: both; width: 100%;"></div>
 			</section>
 
-			<footer>
-				<nav id="search"><input type="text" placeholder="Rechercher sur le site ..." /></nav>
-				<img src="../images/icones/logos/logo_mecanique.png" alt="logo" />
-				<img src="../images/icones/logos/logo_maths.png" alt="logo" />
-				<img src="../images/icones/logos/logo_programmation.png" alt="logo" />
-				<img src="../images/icones/logos/logo_informatique.png" alt="logo" />
-				<img src="../images/icones/logos/logo_electronique.png" alt="logo" />
-				<img src="../images/icones/logos/logo_sciences.png" alt="logo" />
-				<p>&copy tsws.ml - <span id="mobile">version mobile</span><span id="desktop">version ordinateur</span></p>
-			</footer>
+			<?php include '../scripts/includes/footer.html' ?>
 			
 			<div id="notnow">
 				<a href="#">X</a>

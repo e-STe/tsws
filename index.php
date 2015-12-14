@@ -3,7 +3,7 @@
 	<head>
 		<title>The Science WebSite</title>
         <meta name="keywords" content="sciences, tsws, tsws.ml, the science website, cours, apprendre facile" />
-        <meta name="description" content="Site collaboratif de connaissances scientifiques, apprendre en s'amusant : D" />		<?php include 'scripts/includes/meta.html' ?>
+        <meta name="description" content="Tsws, site collaboratif de connaissances scientifiques, apprendre en s'amusant : D" />		<?php include 'scripts/includes/meta.html' ?>
         <?php   
         ?>  
 	</head>
@@ -39,17 +39,7 @@
                 <h2>Commentaires</h2>
                 <textarea>Ecrire un commentaire</textarea>
             </section>
-			<footer>
-				<nav id="search"><input type="text" placeholder="Rechercher sur le site ..." /></nav>
-			    <img src="images/icones/logos/logo_electronique.png" alt="logo_electronique" />
-                <img src="images/icones/logos/logo_informatique.png" alt="logo_informatique" />
-				<img src="images/icones/logos/logo_maths.png" alt="logo_mathematiques" />
-                <img src="images/icones/logos/logo_mecanique.png" alt="logo_mecanique" />
-				<img src="images/icones/logos/logo_programmation.png" alt="logo_programmation" />
-				<img src="images/icones/logos/logo_sciences.png" alt="logo_sciences" />
-                <p style="color: #000;"><a>Nouveautés</a> - <a>Contact</a> - <a>A propos</a></p>
-				<p>&copy tsws.ml - <span id="mobile">version mobile</span><span id="desktop">version ordinateur</span></p>
-			</footer>
+			<?php include '../scripts/includes/footer.html'?> 
 			<div id="notnow">
 				<a href="#">X</a>
 				<h1>Oops !</h1>

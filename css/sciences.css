@@ -1,10 +1,10 @@
 #body #table_contain {
   width: 90%;
+  color: black;
   overflow: auto;
   margin: auto;
-  background: #C5D1D0;
+  background: #e3e3e3;
   border-radius: 6px;
-  padding: 20px;
 }
 #body table {
   text-align: center;
@@ -12,7 +12,7 @@
   margin: auto;
 }
 #body td {
-  background: #a3b1b0;
+  background: #707070;
   border: 2px solid black;
   border-radius: 2px;
   width: 60px;
@@ -20,7 +20,7 @@
   transition: all 0.1s ease-out;
 }
 #body td:hover {
-  background: #C5D1D0;
+  background: #e3e3e3;
 }
 #body table td span {
   margin-left: 10px;
@@ -35,15 +35,19 @@
   transition: all 0.1s ease-in;
 }
 #body table .table_green:hover {
-  background: #C5D1D0;
+  background: #e3e3e3;
 }
 #body #table_information {
   height: 400px;
   font-size: 1.3em;
   width: 90%;
-  margin: auto;
-  margin-top: 30px;
+  margin: 50px auto 20px auto;
   padding: 20px;
-  background: #a3b1b0;
+  background: #e3e3e3;
   border-radius: 8px;
-}.promo .pr1 {	background-image: url(/images/affiches/periodic_table.jpg);	background: red;}
+}
+
+#body #table_information h1 {
+  font-size: 2em;
+  text-align: center;
+}.pr2{	background: #fff url(/images/affiches/periodic_table.jpg) no-repeat 0px 0px;}
