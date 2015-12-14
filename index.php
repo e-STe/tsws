@@ -22,11 +22,13 @@
 					vous pouvez nous joindre par mail ou sur la page de commentaires commune du site.
 					L'équipe TSWS.
 				</p>
-			</article>
+			</article>				
+			<article>
 				<h1>De nouveaux cours</h1>
 				<p>Cours de mathématiques, de sciences, de programmation bien sûr, 
                     les cours vont arriver bientôt aussi, faut bien que le site ait une
-					utilité ! Fin décembre les enfants fin décembre ...</p>
+					utilité ! Fin décembre les enfants fin décembre ...</p>			</article>
+					
 			<section id="promo_div">
 				<div class="promo pr1"><p>HTML5 CSS3</p></div>
 				<div class="promo pr2"><p>Monter un ordinateur</p></div>
