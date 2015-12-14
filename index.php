@@ -39,7 +39,7 @@
                 <h2>Commentaires</h2>
                 <textarea>Ecrire un commentaire</textarea>
             </section>
-			<?php include '../scripts/includes/footer.html'?> 
+			<?php include 'scripts/includes/footer.html'?> 
 			<div id="notnow">
 				<a href="#">X</a>
 				<h1>Oops !</h1>

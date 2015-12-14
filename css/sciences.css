@@ -1,3 +1,7 @@
+
+#menu #a_accueil {background: none;}
+#menu #a_sciences {background: url(/images/icones/border.png) repeat-x 0px 0px;}
+
 #body #table_contain {
   width: 90%;
   color: black;
