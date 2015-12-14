@@ -10,7 +10,21 @@
 	<div style="position: fixed; top: 0; left: 0; height: 100%; width: 100%; pointer-events: none; background-image: url(http://ageheureux.a.g.pic.centerblog.net/725946neige06gif.gif); z-index: 999;"></div> <!-- MAKE IT SNOW ! -->
     <div id="body">
 	
-	  <?php include '../scripts/includes/header.html' ?>
+		<header>
+			<div id="logo"> <h1>&nbsp;The Science Website</h1> <a href="http://tsws.ml"></a> </div>
+			<nav id="menu">
+				<img src="/images/icones/menu/trait.png" alt="menu" />
+				<ul>
+					<li> <a href="/">Accueil</a> </li>
+					<li> <a href="#notnow">Electronique</a> </li>
+					<li> <a href="#notnow">Informatique</a> </li>
+					<li> <a href="#notnow">Mathématiques</a> </li>
+					<li> <a href="#notnow">Mécanique</a> </li>
+					<li> <a href="#notnow">Programmation</a> </li>
+					<li> <span> <a href="/sciences/">Sciences</a> <span> </li>
+				<ul>
+			</nav>
+		</header>
 	  
       <h1 style="margin-top: 150px; text-align: center;">Tableau périodique des éléments</h1>
 

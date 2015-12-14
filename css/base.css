@@ -51,9 +51,9 @@ h2 {font-weight: normal; font-size: 1.8em; margin: 20px 10px 15px 10px;}
 	z-index: 20;
 }
 #menu ul {padding: 0; margin:0; list-style: none;}
-#menu li {position: relative; z-index: 10; display: inline-block; margin: 0px; height: 100%;}
+#menu li {position: relative; z-index: 10; display: inline-block; margin: 0px; height: 100%;}#menu li span a {background: url(/images/icones/border.png) repeat-x 0px 0px}
 #menu li a {display: inline-block; height: 100%;  padding: 22px 12px 22px 12px;}
-#menu li a:hover, #menu #a_accueil {background: url(/images/icones/border.png) repeat-x 0px 0px;}
+#menu li a:hover {background: url(/images/icones/border.png) repeat-x 0px 0px;}
 #menu img {display: none;}
 article {margin-top: 80px;}
 #promo_div {text-align: center;}
