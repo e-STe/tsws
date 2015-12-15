@@ -1,0 +1,29 @@
+#body {border-radius: initial; box-shadow: none;}
+#logo h1 {
+	font-size: 1.2em;
+	height: 100%;
+	width: 60%;
+	background-color: rgba(0,0,0,0.4);
+	z-index: 10;
+}
+#menu {height: 70px; overflow: hidden;}
+#menu img {cursor: pointer; height: 32px; width: 32px; display: block; margin: auto; position: relative; top: 15px;}
+#menu li {display: none; width: 100%;}
+#menu li:hover {background: #fff;}
+#menu li:first-child {margin-top: 30px;}
+#menu a {margin: 0px auto 0px auto;}#a_accueil, #a_sciences {background: none;}#a_accueil:hover, #a_sciences :hover{background: none;}
+article {margin-top: 50px;}
+#search {position: static; background: none; border-radius: initial; margin: auto;}
+#search input {
+	margin: auto;
+	position: static;
+	width: 85%;
+	height: 40px;
+	border-radius: 40px;
+	background-size: 32px 32px;
+}
+.promo {display: block; width: 90%; max-width: none; height: 120px; border-radius: 20px; margin: 15px auto 15px auto;}
+footer {height: auto;}
+#mobile {display: inline;}
+#desktop {display: none;}
+#notnow {width: 80%; height: 50%; margin-left: -45%; top: 20px;}
