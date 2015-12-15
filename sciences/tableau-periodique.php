@@ -7,7 +7,7 @@
     <script src="../scripts/js.table_select.js"></script>
   </head>
   <body>
-	<div style="position: fixed; top: 0; left: 0; height: 100%; width: 100%; pointer-events: none; background-image: url(http://ageheureux.a.g.pic.centerblog.net/725946neige06gif.gif); z-index: 999;"></div> <!-- MAKE IT SNOW ! -->
+	<div style="position: fixed; top: 0; left: 0; height: 100%; width: 100%; pointer-events: none;  background-image: url(/images/neige.gif); z-index: 999;"></div> <!-- MAKE IT SNOW ! -->
     <div id="body">
 	
 	  <?php include '../scripts/includes/header.html' ?>
