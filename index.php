@@ -8,7 +8,11 @@
         ?>  
 	</head>
 	<body>
+<<<<<<< HEAD
 	 <!-- MAKE IT SNOW ! -->
+=======
+		<div style="position: fixed; top: 0; left: 0; height: 100%; width: 100%; pointer-events: none; background-image: url(/images/neige.gif); z-index: 999;"></div> <!-- MAKE IT SNOW ! -->
+>>>>>>> 72b3108150b7e3ed303f0710834826edd8471b85
 		<div id="body">		
 			<?php include 'scripts/includes/header.html' ?>			
 			<article>
