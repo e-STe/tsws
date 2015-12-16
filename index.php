@@ -1,3 +1,10 @@
+<?php 
+function refresh() {
+	header('Refresh:0');
+	exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
@@ -9,8 +16,12 @@
 				if($_POST['content'] AND $_POST['user_name']) {
 					$content = htmlspecialchars($_POST['content']);
 					$username = htmlspecialchars($_POST['user_name']);
-					$comments = fopen('scripts/php/comments.html', 'a');
-					fwrite($comments, nl2br('<div class="comment"><h2>' . $username . '</h2>' . '<p>' . $content . '</p></div>')); 
+					$last_content = file_get_contents('scripts/php/comments.html');
+					$comments = fopen('scripts/php/comments.html', 'w+');
+					fwrite($comments, nl2br('<div class="comment"><h2>' . $username . '</h2>' . '<p>' . $content . '</p></div>') . "\n");
+					fwrite($comments, $last_content);
+					fclose($comments);
+					refresh();
 				} else {echo '<p style ="color: red;">Un champ ou plus n\'a pas été rempli.</p>';}
 			}
         ?>  
