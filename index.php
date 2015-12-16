@@ -3,18 +3,39 @@
 	<head>
 		<title>The Science WebSite</title>
         <meta name="keywords" content="sciences, tsws, tsws.ml, the science website, cours, apprendre facile" />
-        <meta name="description" content="Tsws, site collaboratif de connaissances scientifiques, apprendre en s'amusant : D" />		<?php include 'scripts/includes/meta.html' ?>
-        <?php   
+        <meta name="description" content="Tsws, site collaboratif de connaissances scientifiques, apprendre en s'amusant : D" />		<?php include 'scripts/includes/meta.html'; ?>
+        <?php
+			if($_POST) {
+				if($_POST['content'] AND $_POST['user_name']) {
+					$content = htmlspecialchars($_POST['content']);
+					$username = htmlspecialchars($_POST['user_name']);
+					$comments = fopen('scripts/php/comments.html', 'a');
+					fwrite($comments, nl2br('<div class="comment"><h2>' . $username . '</h2>' . '<p>' . $content . '</p></div>')); 
+				} else {echo '<p style ="color: red;">Un champ ou plus n\'a pas été rempli.</p>';}
+			}
         ?>  
 	</head>
 	<body>
-<<<<<<< HEAD
-	 <!-- MAKE IT SNOW ! -->
-=======
-		<div style="position: fixed; top: 0; left: 0; height: 100%; width: 100%; pointer-events: none; background-image: url(/images/neige.gif); z-index: 999;"></div> <!-- MAKE IT SNOW ! -->
->>>>>>> 72b3108150b7e3ed303f0710834826edd8471b85
-		<div id="body">		
-			<?php include 'scripts/includes/header.html' ?>			
+		<div id="body">
+					<header>
+				<div id="logo"> 
+					<div style="position: absolute; top: 0; left: 0; height: 185px; width: 100%; pointer-events: none; background-image: url(/images/neige.gif); z-index: 999;"></div>
+					<h1>&nbsp;The Science Website</h1> <a href="http://tsws.ml"></a>
+				</div>
+
+				<nav id="menu">
+					<img src="/images/icones/menu/trait.png" alt="menu" />
+					<ul>
+						<li id="a_accueil"> <span> <a href="/">Accueil</a> </span> </li>
+						<li id="a_electro"> <a href="#notnow">Electronique</a> </li>
+						<li id="a_info"> <a href="#notnow">Informatique</a> </li>
+						<li id="a_maths"> <a href="#notnow">Mathématiques</a> </li>
+						<li id="a_meca"> <a href="#notnow">Mécanique</a> </li>
+						<li id="a_prog"> <a href="#notnow">Programmation</a> </li>
+						<li id="a_sciences"> <a href="/sciences/">Sciences</a> </li>
+					<ul>
+				</nav>			</header>
+			
 			<article>
 				<h1>Un nouveau site : tsws !</h1>
 				<p>Bienvenue sur « The Sciences Website », plus connu sous le nom de « TSWS ».
@@ -41,9 +62,15 @@
 			</section>
             <section id="comments">
                 <h2>Commentaires</h2>
-                <textarea>Ecrire un commentaire</textarea>
-            </section>
-			<?php include 'scripts/includes/footer.html'?> 
+				<form action="" method="post">
+					<input type="text" placeholder="Votre nom" name="user_name"/>
+					<textarea name="content" placeholder="Ecrire un commentaire"></textarea>
+					<input type="submit" value="Envoyer"/>
+				</form>
+            </section>
+			
+			<?php include 'scripts/php/comments.html';
+			 include 'scripts/includes/footer.html'; ?> 
 			<div id="notnow">
 				<a href="#">X</a>
 				<h1>Oops !</h1>

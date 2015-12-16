@@ -8,10 +8,10 @@
 }
 #menu {height: 70px; overflow: hidden;}
 #menu img {cursor: pointer; height: 32px; width: 32px; display: block; margin: auto; position: relative; top: 15px;}
-#menu li {display: none; width: 100%;}
+#menu li {display: none; width: 100%;}#menu li span a {background-image: none;}
 #menu li:hover {background: #fff;}
 #menu li:first-child {margin-top: 30px;}
-#menu a {margin: 0px auto 0px auto;}#a_accueil, #a_sciences {background: none;}#a_accueil:hover, #a_sciences :hover{background: none;}
+#menu a {margin: 0px auto 0px auto;}
 article {margin-top: 50px;}
 #search {position: static; background: none; border-radius: initial; margin: auto;}
 #search input {

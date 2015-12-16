@@ -2,15 +2,32 @@
 <html>
   <head>
     <title>TSWS | Tableau périodique</title>
-    <?php include '../scripts/includes/meta.html' ?>
+    <?php include '../scripts/includes/meta.html'; ?>
     <link rel="stylesheet" type="text/css" href="/css/sciences.css" />
     <script src="../scripts/js.table_select.js"></script>
   </head>
   <body>
-	<div style="position: fixed; top: 0; left: 0; height: 100%; width: 100%; pointer-events: none;  background-image: url(/images/neige.gif); z-index: 999;"></div> <!-- MAKE IT SNOW ! -->
     <div id="body">
 	
-	  <?php include '../scripts/includes/header.html' ?>
+		<header>
+			<div id="logo"> 
+				<div style="position: absolute; top: 0; left: 0; height: 185px; width: 100%; pointer-events: none; background-image: url(/images/neige.gif); z-index: 999;"></div>
+				<h1>&nbsp;The Science Website</h1> <a href="http://tsws.ml"></a>
+			</div>
+
+			<nav id="menu">
+				<img src="/images/icones/menu/trait.png" alt="menu" />
+				<ul>
+					<li id="a_accueil"> <a href="/">Accueil</a> </li>
+					<li id="a_electro"> <a href="#notnow">Electronique</a> </li>
+					<li id="a_info"> <a href="#notnow">Informatique</a> </li>
+					<li id="a_maths"> <a href="#notnow">Mathématiques</a> </li>
+					<li id="a_meca"> <a href="#notnow">Mécanique</a> </li>
+					<li id="a_prog"> <a href="#notnow">Programmation</a> </li>
+					<li id="a_sciences"> <span> <a href="/sciences/">Sciences</a> </span> </li>
+				<ul>
+			</nav>
+		</header>
 	  
       <h1 style="margin-top: 150px; text-align: center;">Tableau périodique des éléments</h1>
 
@@ -193,7 +210,7 @@
 		<p>Masse Molaire : </p>
       </aside>
 	  
-	  <?php include '../scripts/includes/footer.html' ?>
+	  <?php include '../scripts/includes/footer.html'; ?>
 	  
     </div>
   </body>
