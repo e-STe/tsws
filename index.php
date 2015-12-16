@@ -18,7 +18,7 @@ function refresh() {
 					$username = htmlspecialchars($_POST['user_name']);
 					$last_content = file_get_contents('scripts/php/comments.html');
 					$comments = fopen('scripts/php/comments.html', 'w+');
-					fwrite($comments, nl2br('<div class="comment"><h2>' . $username . '</h2>' . '<p>' . $content . '</p></div>') . "\n");
+					fwrite($comments, nl2br('<div class="comment"><h3>' . $username . '</h3>' . '<p>' . $content . '</p></div>') . "\n");
 					fwrite($comments, $last_content);
 					fclose($comments);
 					refresh();
