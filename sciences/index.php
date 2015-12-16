@@ -5,7 +5,7 @@
 		<meta name="description" content="Portail des cours de sciences de tsws" />
 		<meta name="keywords" content="sciences, cours, tsws.ml, tsws, apprendre, portail science," />
 		<link rel="stylesheet" type="text/css" href="/css/sciences.css" />
-		<?php include '../scripts/includes/meta.html' ?>
+		<?php include '../scripts/includes/meta.html'; ?>
 	</head>
 	<body>
 		<div id="body">
@@ -44,7 +44,7 @@
 				<div style="clear: both; width: 100%;"></div>
 			</section>
 
-			<?php include '../scripts/includes/footer.html' ?>
+			<?php include '../scripts/includes/footer.html'; ?>
 			
 			<div id="notnow">
 				<a href="#">X</a>

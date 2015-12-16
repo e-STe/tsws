@@ -73,8 +73,8 @@ article {margin-top: 80px;}
     text-align: center;
     margin: 40px auto 0px auto;
 }
-#comments textarea {resize: none; width: 60%; height: 50px;  padding: 10px; font-size: 1em;}
-#comments textarea:focus {outline: none;}
+#comments textarea {resize: none; width: 60%; height: 50px;  padding: 10px; font-size: 1em; display: block; margin: 30px auto 30px auto;}
+#comments textarea:focus {outline: none;}#comments input[type="submit"]{ width: 100px; height: 30px; margin-bottom: 40px;}#comments input[type="text"]{width: 60%; height: 20px;}#comments input[type="text"]:focus {outline: none;}.comment:nth-child(even) {background: #e3e3e3; padding: 10px;}
 #search {
 	position: absolute;
 	top: 175px;

@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>TSWS | Tableau périodique</title>
-    <?php include '../scripts/includes/meta.html' ?>
+    <?php include '../scripts/includes/meta.html'; ?>
     <link rel="stylesheet" type="text/css" href="/css/sciences.css" />
     <script src="../scripts/js.table_select.js"></script>
   </head>
@@ -210,7 +210,7 @@
 		<p>Masse Molaire : </p>
       </aside>
 	  
-	  <?php include '../scripts/includes/footer.html' ?>
+	  <?php include '../scripts/includes/footer.html'; ?>
 	  
     </div>
   </body>

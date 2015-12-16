@@ -3,8 +3,16 @@
 	<head>
 		<title>The Science WebSite</title>
         <meta name="keywords" content="sciences, tsws, tsws.ml, the science website, cours, apprendre facile" />
-        <meta name="description" content="Tsws, site collaboratif de connaissances scientifiques, apprendre en s'amusant : D" />		<?php include 'scripts/includes/meta.html' ?>
-        <?php   
+        <meta name="description" content="Tsws, site collaboratif de connaissances scientifiques, apprendre en s'amusant : D" />		<?php include 'scripts/includes/meta.html'; ?>
+        <?php
+			if($_POST) {
+				if($_POST['content'] AND $_POST['user_name']) {
+					$content = htmlspecialchars($_POST['content']);
+					$username = htmlspecialchars($_POST['user_name']);
+					$comments = fopen('scripts/php/comments.html', 'a');
+					fwrite($comments, nl2br('<div class="comment"><h2>' . $username . '</h2>' . '<p>' . $content . '</p></div>')); 
+				} else {echo '<p style ="color: red;">Un champ ou plus n\'a pas été rempli.</p>';}
+			}
         ?>  
 	</head>
 	<body>
@@ -54,9 +62,15 @@
 			</section>
             <section id="comments">
                 <h2>Commentaires</h2>
-                <textarea>Ecrire un commentaire</textarea>
-            </section>
-			<?php include 'scripts/includes/footer.html'?> 
+				<form action="" method="post">
+					<input type="text" placeholder="Votre nom" name="user_name"/>
+					<textarea name="content" placeholder="Ecrire un commentaire"></textarea>
+					<input type="submit" value="Envoyer"/>
+				</form>
+            </section>
+			
+			<?php include 'scripts/php/comments.html';
+			 include 'scripts/includes/footer.html'; ?> 
 			<div id="notnow">
 				<a href="#">X</a>
 				<h1>Oops !</h1>
